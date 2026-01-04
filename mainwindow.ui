@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>445</width>
-    <height>327</height>
+    <width>515</width>
+    <height>340</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -111,7 +111,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>445</width>
+     <width>515</width>
      <height>22</height>
     </rect>
    </property>
@@ -119,21 +119,47 @@
     <property name="title">
      <string>文件</string>
     </property>
-    <addaction name="separator"/>
+    <addaction name="actionBackup"/>
+    <addaction name="actionRestore"/>
    </widget>
    <widget class="QMenu" name="menu_2">
     <property name="title">
      <string>帮助</string>
     </property>
-    <addaction name="actionabout"/>
+    <addaction name="actionAbout"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionabout">
+  <action name="actionBackup">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentSave"/>
+   </property>
    <property name="text">
-    <string>about</string>
+    <string>备份</string>
+   </property>
+  </action>
+  <action name="actionRestore">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::EditUndo"/>
+   </property>
+   <property name="text">
+    <string>恢复</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::HelpFaq"/>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
    </property>
   </action>
  </widget>

@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql widgets charts network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -9,13 +9,17 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    encryptionutil.cpp \
     main.cpp \
     mainwindow.cpp \
-    passwordmanager.cpp
+    passwordmanager.cpp \
+    sqlrepository.cpp
 
 HEADERS += \
+    encryptionutil.h \
     mainwindow.h \
-    passwordmanager.h
+    passwordmanager.h \
+    sqlrepository.h
 
 FORMS += \
     mainwindow.ui
